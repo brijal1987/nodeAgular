@@ -1,0 +1,11 @@
+  <span>{{task.title}}</span>
+  <button class="btn btn-danger pull-right" (click)="remove(task.id)">
+    <span class="glyphicon glyphicon-remove"></span>
+  </button>
+
+  <button class="btn btn-info pull-right" routerLink="/detail/{{task.id}}">
+    <span class="glyphicon glyphicon-option-horizontal"></span>
+  </button>
+
+  <div class="clearfix"></div>
+  

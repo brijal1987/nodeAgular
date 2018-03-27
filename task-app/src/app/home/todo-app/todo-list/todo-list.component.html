@@ -1,0 +1,9 @@
+<div *ngIf="tasks.length === 0; else taskList" class="well">Loading...</div>
+
+<ng-template #taskList>
+  <ul class="list-group">
+    <li *ngFor="let task of tasks" class="list-group-item">
+      <app-todo-list-item [data]="task"></app-todo-list-item>
+    </li>
+  </ul>
+</ng-template>
